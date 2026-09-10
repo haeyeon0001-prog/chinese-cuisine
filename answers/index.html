@@ -59,17 +59,17 @@ p{margin:0 0 10px}
 .track::before{content:"";width:0;height:0;border-left:7px solid var(--jade);border-top:5px solid transparent;border-bottom:5px solid transparent}
 /* dialogue */
 .cast{font-size:11px;color:var(--ink-2);margin-bottom:9px;padding:7px 11px;background:var(--jade-soft)}
-.dlg{display:grid;grid-template-columns:34px 1fr;row-gap:7px;column-gap:9px}
-.dlg .who{font-size:11px;font-weight:700;letter-spacing:.04em;padding-top:5px}
+.dlg{display:grid;grid-template-columns:30px 1fr;row-gap:4.5px;column-gap:8px}
+.dlg .who{font-size:9.6px;font-weight:700;letter-spacing:.02em;padding-top:4px}
 .dlg .who.w{color:var(--flame)} .dlg .who.y{color:var(--vocab)} .dlg .who.o{color:var(--ochre)}
-.dlg .line{font-size:14.5px;line-height:1.75;letter-spacing:.02em;font-weight:500;text-wrap:pretty;line-break:strict;word-break:normal;overflow-wrap:normal}
-.dlg .num{color:var(--ink-3);font-size:11px;font-family:"Noto Sans",sans-serif;vertical-align:top;margin-right:6px;font-weight:500}
-.dlg .stage{grid-column:1/-1;text-align:center;color:var(--ink-3);font-size:12px;padding:1px 0}
+.dlg .line{font-size:12.5px;line-height:1.7;letter-spacing:.02em;font-weight:500;text-wrap:pretty;line-break:strict;word-break:normal;overflow-wrap:normal}
+.dlg .num{color:var(--ink-3);font-size:9.5px;font-family:"Noto Sans",sans-serif;vertical-align:top;margin-right:6px;font-weight:500}
+.dlg .stage{grid-column:1/-1;text-align:center;color:var(--ink-3);font-size:10px;padding:0}
 .twocol{display:grid;grid-template-columns:1fr 1fr;gap:0 26px;align-items:start}
 .twocol>div{min-width:0}
 .colhead{font-size:11px;letter-spacing:.12em;color:var(--jade);font-weight:700;
   border-bottom:1px solid var(--rule);padding-bottom:5px;margin-bottom:8px}
-.dlg.blk{row-gap:6px;column-gap:6px;grid-template-columns:26px 1fr}.dlg.blk .line{font-size:10.5px;line-height:1.5;font-weight:400}.dlg.blk .who{padding-top:1px;font-size:10.5px}.dlg.jp .line{color:var(--ink-2);font-size:10.5px;line-height:1.5}.page.one h3{margin:12px 0 6px;font-size:13px}
+.dlg.blk{row-gap:4px;column-gap:5px;grid-template-columns:22px 1fr}.dlg.blk .line{font-size:9.8px;line-height:1.45;font-weight:400}.dlg.blk .who{padding-top:1px;font-size:10.5px}.dlg.jp .line{color:var(--ink-2);font-size:9.8px;line-height:1.45}.page.one h3{margin:12px 0 6px;font-size:13px}
 .dlg.blk .line{text-align:justify;text-justify:inter-ideograph;text-wrap:pretty;line-break:strict}.dlg.blk .stage{grid-column:2;text-align:left;font-size:12px;padding:2px 0}
 .nv{color:var(--vocab);font-weight:700}
 .wc{margin-top:22px;text-align:right;font-size:12px;color:var(--ink-3)}
@@ -79,25 +79,30 @@ p{margin:0 0 10px}
 .pyl .p{color:var(--ink);font-size:14px}
 .pyl .j{color:var(--ink-2);font-size:13px;margin-top:2px}
 /* vocab */
-table{border-collapse:collapse;width:100%;font-size:11.5px}
+table{border-collapse:collapse;width:100%;font-size:10.4px}
 .tbl{overflow-x:auto}
 th{font-size:11px;letter-spacing:.1em;color:var(--jade);text-align:left;font-weight:700;border-bottom:1px solid var(--rule);padding:4px 6px}
-td{border-bottom:1px dotted var(--rule);padding:3px 5px;vertical-align:top;line-height:1.45}
-td.w{font-size:14px;font-weight:700;color:var(--vocab);line-height:1.35}
+td{border-bottom:1px dotted var(--rule);padding:2px 4px;vertical-align:top;line-height:1.4}
+td.w{font-size:12.5px;font-weight:700;color:var(--vocab);line-height:1.3}
 td.w .py{display:inline;margin-left:8px;font-size:12.5px;font-weight:400;color:var(--vocab);white-space:nowrap}
 td .m{display:block}
 td .m i{font-style:normal;color:var(--ochre);font-weight:700;margin-right:4px}
-.pos{display:inline-block;border:1px solid var(--ink-3);border-radius:2px;padding:0 4px;margin-right:6px;font-size:11px;line-height:1.5;color:var(--ink-2);font-family:"Zen Kaku Gothic New",sans-serif;font-weight:500;vertical-align:1px;white-space:nowrap}
+.pos{display:inline-block;border:1px solid rgba(124,134,137,.55);border-radius:2px;padding:0 2px;margin-right:4px;font-size:9.5px;line-height:1.3;color:var(--ink-2);font-family:"Zen Kaku Gothic New",sans-serif;font-weight:500;vertical-align:1px;white-space:nowrap}
 td .ex{display:block;color:var(--ink-2);font-size:13px;line-height:1.45}
-.hsk{font-size:10px;color:var(--ochre);border:1px solid var(--ochre);padding:0 4px;border-radius:3px;margin-left:4px;vertical-align:middle;font-family:"Noto Sans",sans-serif}
+.hsk{font-size:9.4px;color:rgba(185,138,23,.85);border:0;padding:0;margin-left:4px;vertical-align:1px;font-family:"Noto Sans",sans-serif;line-height:1.2;letter-spacing:-.02em}
 /* key expressions */
-.vgrid{column-count:2;column-gap:13px;font-size:10.2px}
-.vi{break-inside:avoid;padding:1px 0 1.5px;border-top:1px dotted var(--rule)}
+.vgrid{column-count:2;column-gap:12px;font-size:10.2px}
+.vi{break-inside:avoid;padding:1.5px 0 2px;border-top:1px dotted var(--rule);
+  display:grid;grid-template-columns:20mm 1fr;gap:0 6px;align-items:start}
+.vi .vl{line-height:1.35}
+.vi .vr{min-width:0}
 .vi:first-child{border-top:0}
-.vi .vw{font-size:12.5px;font-weight:700;color:var(--vocab);margin-right:5px}
-.vi .py{font-size:10px;color:var(--ink-3);white-space:nowrap}
-.vi .m{display:block;margin-top:0;line-height:1.3}
-.vi .ex{display:block;color:var(--ink-3);font-size:10px;line-height:1.3}
+.vi .vw{font-size:12.5px;font-weight:700;color:var(--vocab);margin-right:4px}
+.vi .py{font-size:10px;color:var(--ink-3);white-space:nowrap;display:block}
+.vi .m{display:block;margin-top:0;line-height:1.45}
+.vi .m i{font-style:normal;color:var(--ochre);font-weight:700;margin-right:3px}   /* ①② は立体 */
+.vi i,.exg i,.kx i{font-style:normal}
+.vi .ex{display:block;color:var(--ink-2);font-size:9.8px;line-height:1.5;margin-top:1px}
 .kx{display:block;column-count:2;column-gap:16px}
 .kx article{break-inside:avoid;padding:4px 6px;background:var(--paper-2);border-top:1.5px solid var(--flame);line-height:1.3;margin-bottom:3px}
 .kx .pat{font-size:12px;font-weight:700;line-height:1.2}
@@ -167,10 +172,9 @@ ol.q{padding-left:18px;font-size:11.5px;margin:0;line-height:1.45}ol.q li{margin
 .column{background:var(--lacquer-soft);border-left:3px solid var(--flame);padding:7px 10px;font-size:10.5px;line-height:1.55}
 .column h4{margin:0 0 5px;font-family:"Shippori Mincho",serif;font-size:14px;color:var(--lacquer)}
 .note{font-size:10px;color:var(--ink-3);margin-top:12px;border-top:1px solid var(--rule);padding-top:5px}
-@media (max-width:840px){                              /* 画面が狭いときは幅なりに */
-  .stack,.page,.page:nth-child(even){width:auto;min-height:0;padding:24px 18px 28px}
-  .taste,.twocol,.exrow,.vgrid,.kx{grid-template-columns:1fr;column-count:1}
-  .dish{font-size:36px}}
+p.note{font-size:11.5px;color:var(--ink-2);line-height:1.6}   /* 補助語彙は少し大きく */
+/* 紙面は固定幅。狭い画面では横にスクロールして、組みは崩さない */
+@media (max-width:760px){body{padding:12px 6px 24px}}
 @page{size:177.8mm 254mm;margin:0}
 @media print{body{background:#fff;padding:0}.stack{width:auto;gap:0}
   .page{box-shadow:none;break-after:page;margin:0}}
@@ -188,7 +192,8 @@ ol.q{padding-left:18px;font-size:11.5px;margin:0;line-height:1.45}ol.q li{margin
 
 .pnum{position:absolute;left:13mm;right:13mm;bottom:6mm;text-align:right;font-size:11px;color:var(--ink-3);font-family:"Noto Sans",sans-serif;font-variant-numeric:tabular-nums;letter-spacing:.08em}
 
-.cardsheet{border:1px solid var(--rule);background:#fff;padding:4px;margin-top:6px}
+.cardsheet{border:1px solid var(--rule);background:#fff;padding:4px;margin:6px auto 0;
+  width:120mm;max-width:100%}
 .cardsheet img{width:100%;height:auto;display:block}
 
 .tqrow{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin:4px 0 8px}
@@ -215,6 +220,11 @@ ol.q{padding-left:18px;font-size:11.5px;margin:0;line-height:1.45}ol.q li{margin
 .idx td.w{font-size:12px}
 .idx td.w .py{margin-left:5px;font-size:9.8px}
 .idx .hskcell,.idx .lsn{font-size:9.5px}
+
+.banner{display:flex;align-items:baseline;gap:9px;background:var(--lacquer-soft);
+  border-left:3px solid var(--flame);padding:3px 8px;margin-bottom:4px}
+.banner b{font-family:"Shippori Mincho",serif;font-size:12.5px;color:var(--lacquer)}
+.banner span{font-size:10px;color:var(--ink-2)}
 
 .ans{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;font-size:12.5px}
 .ans .ab.wide{grid-column:1/-1}
