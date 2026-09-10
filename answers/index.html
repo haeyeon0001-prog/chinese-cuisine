@@ -1,0 +1,292 @@
+<title>中国語ー中国料理編 解答</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Noto+Serif+SC:wght@400;500;700&family=Noto+Sans:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+:root{
+  --paper:#FFFFFF; --paper-2:#F3F4F1; --ink:#1E2528; --ink-2:#4B5558; --ink-3:#7C8689;
+  --rule:#DCDCD6; --lacquer:#C4551F; --lacquer-soft:#FBEFE5; --jade:#4A7C9B; --jade-soft:#EAF2F8;
+  --ochre:#B98A17; --ochre-soft:#F5EBD0; --blank:#FFFFFF; --vocab:#1F5FA8; --flame:#E8843C;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#1A1F21; --paper-2:#232A2D; --ink:#EEF1EC; --ink-2:#C1C8C4; --ink-3:#8C9692;
+  --rule:#3A3E42; --lacquer:#E8834A; --lacquer-soft:#3A2A20; --jade:#8FB6CE; --jade-soft:#1F2A33;
+  --ochre:#D9AE3C; --ochre-soft:#3A3220; --blank:#0F1314; --vocab:#7FB2F0; --flame:#E8843C;
+}}
+:root[data-theme="dark"]{
+  --paper:#1A1F21; --paper-2:#232A2D; --ink:#EEF1EC; --ink-2:#C1C8C4; --ink-3:#8C9692;
+  --rule:#3A3E42; --lacquer:#E8834A; --lacquer-soft:#3A2A20; --jade:#8FB6CE; --jade-soft:#1F2A33;
+  --ochre:#D9AE3C; --ochre-soft:#3A3220; --blank:#0F1314; --vocab:#7FB2F0; --flame:#E8843C;
+}
+*{box-sizing:border-box}
+body{background:#E9EAE6;color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",sans-serif;font-size:13px;line-height:1.55;margin:0;padding:20px 10px 40px}
+.zh{font-family:"Songti SC","SimSun","宋体","STSong","Noto Serif SC",serif}
+.py{font-family:"Noto Sans","Helvetica Neue",Arial,sans-serif}
+.stack{width:177.8mm;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.page{background:var(--paper);width:177.8mm;min-height:254mm;padding:12mm 12mm 10mm 17mm;
+  position:relative;box-shadow:0 1px 4px rgba(0,0,0,.12);overflow:visible}
+.page:nth-child(even){padding:12mm 17mm 10mm 12mm}   /* 偶数ページはノドが右 */
+.folio{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-size:10px;letter-spacing:.06em;color:var(--ink-3);border-bottom:1.5px solid var(--ink);padding-bottom:5px;margin-bottom:12px}
+.folio>span:last-child{text-align:right}
+.folio b{color:var(--lacquer);font-weight:700;letter-spacing:.06em;font-size:12.5px;font-family:"Shippori Mincho","Hiragino Mincho ProN",serif}
+h1,h2,h3{font-family:"Shippori Mincho","Hiragino Mincho ProN",serif;text-wrap:balance;margin:0}
+h2{font-size:22px;font-weight:700;line-height:1.3}
+h3{font-size:12.5px;font-weight:700;margin:8px 0 4px;display:flex;align-items:center;gap:9px}
+h3::before{content:"";width:5px;height:17px;background:var(--flame)}
+p{margin:0 0 10px}
+.eyebrow{font-size:11px;letter-spacing:.14em;color:var(--jade);font-weight:700;margin-bottom:2px}
+.goalbox{background:var(--jade-soft);padding:9px 12px}
+/* opener */
+.opener{display:grid;grid-template-columns:1fr;gap:8px}
+.opener .head{display:flex;align-items:flex-end;gap:16px}
+.opener .figure{background:var(--paper-2);display:grid;place-items:center;color:var(--ink-3);font-size:11px;letter-spacing:.1em;max-height:74mm;overflow:hidden}
+.opener .figure img{width:100%;height:auto;display:block}   /* 元の写真をそのまま。切らない */
+.lesson-no{font-family:"Shippori Mincho",serif;font-size:46px;line-height:.9;color:var(--flame);font-weight:700}
+.dish{font-size:30px;line-height:1.1;font-weight:700}
+.dish small{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;font-weight:500;color:var(--ink-2);margin-top:6px}
+.goals{list-style:none;padding:0;margin:6px 0 0;display:grid;gap:0}
+.goals li{display:grid;grid-template-columns:1fr auto;gap:10px;border-bottom:1px dotted #B9C7D2;padding:3px 0;font-size:12px;line-height:1.45}
+.goals li:last-child{border-bottom:0}
+.goals .zh{color:var(--vocab);font-weight:700;font-size:13.5px}
+.aqr{display:grid;grid-template-columns:58px 1fr;gap:11px;align-items:center;border:1px solid var(--rule);padding:8px 11px;margin-top:0}
+.aqr .aqrimg{padding:0}
+.aqr .aqrimg svg{width:100%;height:auto;display:block}
+.aqr b{font-family:"Shippori Mincho",serif;font-size:13.5px;color:var(--ink)}
+.aqr p{font-size:10.5px;color:var(--ink-2);margin:2px 0 0;line-height:1.5}
+.method{background:var(--lacquer-soft);border-left:3px solid var(--flame);padding:7px 10px;font-size:10px;margin-top:0;line-height:1.45}
+.method>b{color:var(--lacquer);font-family:"Shippori Mincho",serif;font-size:13.5px}
+.method ol{margin:3px 0 0;padding-left:17px}
+.method li{margin:1px 0}
+.track{display:inline-flex;align-items:center;gap:6px;background:var(--jade-soft);color:var(--jade);border-radius:999px;padding:2px 10px 2px 8px;font-size:11.5px;font-weight:700;letter-spacing:.04em;white-space:nowrap}
+.track::before{content:"";width:0;height:0;border-left:7px solid var(--jade);border-top:5px solid transparent;border-bottom:5px solid transparent}
+/* dialogue */
+.cast{font-size:11px;color:var(--ink-2);margin-bottom:9px;padding:7px 11px;background:var(--jade-soft)}
+.dlg{display:grid;grid-template-columns:34px 1fr;row-gap:7px;column-gap:9px}
+.dlg .who{font-size:11px;font-weight:700;letter-spacing:.04em;padding-top:5px}
+.dlg .who.w{color:var(--flame)} .dlg .who.y{color:var(--vocab)} .dlg .who.o{color:var(--ochre)}
+.dlg .line{font-size:14.5px;line-height:1.75;letter-spacing:.02em;font-weight:500;text-wrap:pretty;line-break:strict;word-break:normal;overflow-wrap:normal}
+.dlg .num{color:var(--ink-3);font-size:11px;font-family:"Noto Sans",sans-serif;vertical-align:top;margin-right:6px;font-weight:500}
+.dlg .stage{grid-column:1/-1;text-align:center;color:var(--ink-3);font-size:12px;padding:1px 0}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:0 26px;align-items:start}
+.twocol>div{min-width:0}
+.colhead{font-size:11px;letter-spacing:.12em;color:var(--jade);font-weight:700;
+  border-bottom:1px solid var(--rule);padding-bottom:5px;margin-bottom:8px}
+.dlg.blk{row-gap:6px;column-gap:6px;grid-template-columns:26px 1fr}.dlg.blk .line{font-size:10.5px;line-height:1.5;font-weight:400}.dlg.blk .who{padding-top:1px;font-size:10.5px}.dlg.jp .line{color:var(--ink-2);font-size:10.5px;line-height:1.5}.page.one h3{margin:12px 0 6px;font-size:13px}
+.dlg.blk .line{text-align:justify;text-justify:inter-ideograph;text-wrap:pretty;line-break:strict}.dlg.blk .stage{grid-column:2;text-align:left;font-size:12px;padding:2px 0}
+.nv{color:var(--vocab);font-weight:700}
+.wc{margin-top:22px;text-align:right;font-size:12px;color:var(--ink-3)}
+/* pinyin page */
+.pyl{display:grid;grid-template-columns:28px 1fr;row-gap:12px;column-gap:10px;font-size:13.5px}
+.pyl .n{color:var(--ink-3);font-family:"Noto Sans",sans-serif;font-size:11px;padding-top:4px}
+.pyl .p{color:var(--ink);font-size:14px}
+.pyl .j{color:var(--ink-2);font-size:13px;margin-top:2px}
+/* vocab */
+table{border-collapse:collapse;width:100%;font-size:11.5px}
+.tbl{overflow-x:auto}
+th{font-size:11px;letter-spacing:.1em;color:var(--jade);text-align:left;font-weight:700;border-bottom:1px solid var(--rule);padding:4px 6px}
+td{border-bottom:1px dotted var(--rule);padding:3px 5px;vertical-align:top;line-height:1.45}
+td.w{font-size:14px;font-weight:700;color:var(--vocab);line-height:1.35}
+td.w .py{display:inline;margin-left:8px;font-size:12.5px;font-weight:400;color:var(--vocab);white-space:nowrap}
+td .m{display:block}
+td .m i{font-style:normal;color:var(--ochre);font-weight:700;margin-right:4px}
+.pos{display:inline-block;border:1px solid var(--ink-3);border-radius:2px;padding:0 4px;margin-right:6px;font-size:11px;line-height:1.5;color:var(--ink-2);font-family:"Zen Kaku Gothic New",sans-serif;font-weight:500;vertical-align:1px;white-space:nowrap}
+td .ex{display:block;color:var(--ink-2);font-size:13px;line-height:1.45}
+.hsk{font-size:10px;color:var(--ochre);border:1px solid var(--ochre);padding:0 4px;border-radius:3px;margin-left:4px;vertical-align:middle;font-family:"Noto Sans",sans-serif}
+/* key expressions */
+.vgrid{column-count:2;column-gap:13px;font-size:10.2px}
+.vi{break-inside:avoid;padding:1px 0 1.5px;border-top:1px dotted var(--rule)}
+.vi:first-child{border-top:0}
+.vi .vw{font-size:12.5px;font-weight:700;color:var(--vocab);margin-right:5px}
+.vi .py{font-size:10px;color:var(--ink-3);white-space:nowrap}
+.vi .m{display:block;margin-top:0;line-height:1.3}
+.vi .ex{display:block;color:var(--ink-3);font-size:10px;line-height:1.3}
+.kx{display:block;column-count:2;column-gap:16px}
+.kx article{break-inside:avoid;padding:4px 6px;background:var(--paper-2);border-top:1.5px solid var(--flame);line-height:1.3;margin-bottom:3px}
+.kx .pat{font-size:12px;font-weight:700;line-height:1.2}
+.kx .pat span{color:var(--vocab)}
+.kx .patpy{display:inline;margin-left:7px;font-size:10.5px;font-weight:400;color:var(--vocab);white-space:nowrap}
+.kx .jp{font-size:10.5px;color:var(--ink-2);line-height:1.35}
+.kx .from{font-size:10.5px;margin:2px 0;padding:2px 5px;background:var(--jade-soft);border-left:3px solid var(--jade);line-height:1.55}
+.kx .from b{color:var(--lacquer);font-weight:700}
+.exg{display:block;margin-top:2px;font-size:10.5px;line-height:1.35}
+.exg .exz{margin-top:2px}
+.exg .exr{margin-bottom:1px;line-height:1.35}.exg .exz{text-wrap:pretty;line-break:strict}
+.exg .exz.from{background:var(--jade-soft);border-left:3px solid var(--jade);padding:4px 8px;margin:0}.exg .exr{font-size:12.5px;color:var(--ink-2);line-height:1.45;padding-top:1px}.exg .exr .j{font-size:10px}
+.exg .exn{display:inline-block;min-width:15px;height:15px;line-height:15px;text-align:center;border-radius:50%;background:var(--vocab);color:#fff;font-size:9.5px;font-weight:700;margin-right:6px;vertical-align:2px;font-family:"Noto Sans",sans-serif}
+.kx ul{margin:2px 0 0;padding-left:15px;font-size:10.5px;line-height:1.4}
+/* taste corner */
+.taste{display:grid;grid-template-columns:repeat(3,1fr);gap:5px 7px;font-size:10.2px}
+.taste .tg{background:var(--paper-2);padding:5px 7px}
+.taste h4{margin:0 0 3px;font-size:10px;letter-spacing:.1em;color:var(--ochre)}
+.taste .ti{padding:1.5px 0;border-top:1px dashed var(--rule);line-height:1.35}
+.taste .ti:first-of-type{border-top:0;padding-top:1px}
+.taste .ti b{font-size:11.5px;font-weight:700;margin-right:5px}
+.taste .ti i{font-style:normal;font-size:10px;color:var(--vocab);white-space:nowrap}
+.taste .ti span{display:block;font-size:10px;color:var(--ink-2);margin-top:0}
+/* exercises */
+.ex-h{display:flex;align-items:baseline;gap:7px;margin:8px 0 4px}
+.ex-h .k{font-family:"Shippori Mincho",serif;font-size:16px;font-weight:700;color:var(--flame)}
+.ex-h .t{font-weight:700}
+.ex-h .s{font-size:12px;color:var(--ink-3)}
+.ws{border:1px solid var(--rule);background:#fff;padding:4px;margin-bottom:8px;position:relative}
+.ann{position:absolute;inset:6px;width:calc(100% - 12px);height:calc(100% - 12px);pointer-events:none}
+.ann .al{stroke:#8C9497;stroke-width:.22}
+.ann .ad{fill:var(--lacquer)}
+.ann .au{stroke:var(--ink);stroke-width:.35}
+.ann .ab{fill:#fff;stroke-width:.32}
+.ann .ab.kd{stroke:var(--lacquer)} .ann .ab.km{stroke:var(--vocab)} .ann .ab.kp{stroke:var(--ochre)}
+.ann .an{stroke:none} .ann .an.kd{fill:var(--lacquer)} .ann .an.km{fill:var(--vocab)} .ann .an.kp{fill:var(--ochre)}
+.ann .at{fill:#fff;font-size:2.2px;font-weight:700;text-anchor:middle;font-family:"Noto Sans",sans-serif}
+.ws img{width:100%;height:auto;display:block}
+.wleg{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:11.5px;margin-bottom:8px}
+.wleg span{border:1.5px solid;border-radius:3px;padding:1px 7px;font-weight:700}
+.wleg .kd{border-color:var(--lacquer);color:var(--lacquer)}
+.wleg .km{border-color:var(--vocab);color:var(--vocab)}
+.wleg .kp{border-color:var(--ochre);color:var(--ochre)}
+.wleg em{font-style:normal;color:var(--ink-3)}
+.wsq{font-size:14px;margin-bottom:14px}
+.wsq b{color:var(--lacquer)}
+.namerow{display:flex;gap:18px;flex-wrap:wrap;margin-top:8px;font-size:12.5px;color:var(--ink-3)}
+.namerow span{display:flex;align-items:baseline;gap:6px;flex:1;min-width:150px}
+.iln{flex:1;display:inline-block;min-width:70px;border-bottom:1.5px solid var(--ink);height:1.5em}
+.ings{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:9px 22px}
+.ings li{display:flex;align-items:baseline;gap:8px;font-size:13.5px}
+.ings .ij{color:var(--ink-2);white-space:nowrap;min-width:6.5em}
+.story{font-size:12.5px;line-height:1.95;background:transparent;padding:0;text-wrap:pretty;line-break:strict;word-break:normal}
+.bl{display:inline-block;min-width:2.4em;border-bottom:2px solid var(--ink);background:var(--blank);margin:0 2px;text-align:center;font-size:11px;color:var(--ink-3);line-height:1.6;padding:0 4px;vertical-align:baseline}
+.bank{margin-top:10px;font-size:14px;display:flex;flex-wrap:wrap;gap:6px}
+.bank span{border:1px solid var(--rule);padding:2px 10px;background:var(--paper-2)}
+ol.q{padding-left:18px;font-size:11.5px;margin:0;line-height:1.45}ol.q li{margin:2px 0}
+/* 記入欄の長さ: 文を書くところは行いっぱい、語や記号は短く（12課共通） */
+.q li{display:block}
+.q li>.qt{display:block}
+.q li>.wl{display:block;width:100%;border-bottom:1px solid var(--ink);height:19px;margin:1px 0 3px}
+.ox{display:inline-block;width:2.6em;border-bottom:1px solid var(--ink);margin-left:10px;height:16px;vertical-align:-2px}
+.dict{display:grid;gap:3px;font-size:11px}
+.dict div{display:grid;grid-template-columns:22px 1fr;gap:8px;align-items:baseline}
+.dict div span{display:flex;align-items:baseline;gap:6px;border:0}
+.dict .dl{flex:1;border-bottom:1px solid var(--ink);height:19px}
+.column{background:var(--lacquer-soft);border-left:3px solid var(--flame);padding:7px 10px;font-size:10.5px;line-height:1.55}
+.column h4{margin:0 0 5px;font-family:"Shippori Mincho",serif;font-size:14px;color:var(--lacquer)}
+.note{font-size:10px;color:var(--ink-3);margin-top:12px;border-top:1px solid var(--rule);padding-top:5px}
+@media (max-width:840px){                              /* 画面が狭いときは幅なりに */
+  .stack,.page,.page:nth-child(even){width:auto;min-height:0;padding:24px 18px 28px}
+  .taste,.twocol,.exrow,.vgrid,.kx{grid-template-columns:1fr;column-count:1}
+  .dish{font-size:36px}}
+@page{size:177.8mm 254mm;margin:0}
+@media print{body{background:#fff;padding:0}.stack{width:auto;gap:0}
+  .page{box-shadow:none;break-after:page;margin:0}}
+
+.exrow{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;align-items:start}
+.exrow>div{min-width:0}
+.hzq{display:grid;grid-template-columns:repeat(6,1fr);gap:6px 12px;margin-bottom:14px}
+.hzi{display:block}
+.hzi .n{color:var(--ink-3);font-size:10px;display:block}
+.hzi b{font-size:12.5px;font-weight:700;color:var(--vocab);display:block;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis}
+.hzi i{display:block;border-bottom:1px solid var(--ink);height:18px}
+.wln{display:flex;flex-direction:column;gap:0;margin:6px 0 14px}
+.wln i{display:block;width:100%;border-bottom:1px solid var(--ink);height:22px}
+
+.pnum{position:absolute;left:13mm;right:13mm;bottom:6mm;text-align:right;font-size:11px;color:var(--ink-3);font-family:"Noto Sans",sans-serif;font-variant-numeric:tabular-nums;letter-spacing:.08em}
+
+.cardsheet{border:1px solid var(--rule);background:#fff;padding:4px;margin-top:6px}
+.cardsheet img{width:100%;height:auto;display:block}
+
+.tqrow{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin:4px 0 8px}
+.tq{display:flex;align-items:center;gap:8px}
+.tq .tqi{width:42px;flex:none}
+.tq .tqi svg{width:100%;height:auto;display:block}
+.tq b{font-size:11px;color:var(--jade);font-family:"Noto Sans",sans-serif;letter-spacing:.03em;white-space:nowrap}
+.tq span{font-size:11px;color:var(--ink-2);white-space:nowrap;margin-left:6px}
+
+/* QRは白枠なしで置く。暗い配色のときだけ読み取れるように下地を敷く */
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tq .tqi,
+  :root:not([data-theme="light"]) .aqr .aqrimg{background:#fff;padding:3px}}
+:root[data-theme="dark"] .tq .tqi, :root[data-theme="dark"] .aqr .aqrimg{background:#fff;padding:3px}
+
+.ansqr{display:flex;align-items:center;gap:9px;border:1px solid var(--rule);padding:5px 8px;margin-top:7px}
+.ansqr .tqi{width:38px;flex:none}
+.ansqr .tqi svg{width:100%;height:auto;display:block}
+.ansqr b{font-size:11px;color:var(--lacquer);display:block}
+.ansqr span{font-size:10px;color:var(--ink-2);display:block;margin-top:1px}
+
+.idxgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px;align-items:start}
+.idxgrid table.idx{font-size:10.2px}
+.idx td{padding:1px 4px;line-height:1.3}
+.idx td.w{font-size:12px}
+.idx td.w .py{margin-left:5px;font-size:9.8px}
+.idx .hskcell,.idx .lsn{font-size:9.5px}
+
+.ans{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;font-size:12.5px}
+.ans .ab.wide{grid-column:1/-1}
+.ans h4{margin:0 0 4px;font-family:"Shippori Mincho",serif;font-size:12.5px;color:var(--lacquer);
+border-bottom:1px solid var(--rule);padding-bottom:2px}
+.ans p{margin:0;line-height:1.7}
+.ans b{color:var(--vocab);font-weight:700}
+.ans .py{font-size:11px;color:var(--ink-3)}
+.ans .al{margin:0;padding-left:1.5em;line-height:1.65}
+.ans .al li{margin:1px 0}
+.ans u{text-decoration:underline;text-underline-offset:2px}
+</style>
+<div class="stack">
+<section class="page">
+  <div class="folio"><span>巻末</span><b>解答</b><span>練習問題・全テスト</span></div>
+  <div class="lesson-no">解答</div>
+  <p style="font-size:13.5px;color:var(--ink-2);margin-top:12px">各課の練習問題と、確認テスト・総合模擬テストの解答です。
+  作文は解答例なので、意味が合っていれば言い方が違っていてもかまいません。
+  間違えた問題は、その課の本文と音声に戻って確かめましょう。</p>
+<div class="ans"><div class="ab wide"><h4>A-1　写真の書き入れ</h4><p>1. <b>水饺</b> <span class="py">shuǐjiǎo</span> 水餃子　2. <b>馅儿</b> <span class="py">xiànr</span> 餡　3. <b>面皮</b> <span class="py">miànpí</span> 皮</p></div><div class="ab wide"><h4>A-2　ピンインから漢字</h4><p>1. <b>包</b> <span class="py">bāo</span>　2. <b>教</b> <span class="py">jiāo</span>　3. <b>放</b> <span class="py">fàng</span>　4. <b>闻</b> <span class="py">wén</span>　5. <b>香</b> <span class="py">xiāng</span>　6. <b>难看</b> <span class="py">nánkàn</span></p></div><div class="ab wide"><h4>B　物語で穴埋め</h4><p>1. <b>包</b>　2. <b>从来</b>　3. <b>馅儿</b>　4. <b>放</b>　5. <b>盐</b>　6. <b>捏</b>　7. <b>难看</b>　8. <b>煮</b>　9. <b>尝</b>　10. <b>薄</b>　11. <b>鲜</b>　12. <b>蘸</b>　13. <b>味道</b>　14. <b>过年</b>　15. <b>原来</b></p></div><div class="ab"><h4>C-1　並べ替え</h4><ol class="al zh"><li>我从来没有吃过北京烤鸭。</li><li>我们先买菜，然后做饭。</li><li>请把饺子放在盘子里。</li><li>这个菜又便宜又好吃。</li></ol></div><div class="ab"><h4>C-2　作文（解答例）</h4><ol class="al zh"><li>我从来没去过中国。</li><li>先洗手，然后吃饭。</li><li>请把盐放在桌子上。</li><li>这个皮又薄又软。</li></ol></div><div class="ab"><h4>D　内容理解</h4><ol class="al"><li>×</li><li>○</li><li>×</li><li>×（蘸醋和辣椒油）</li><li>○</li></ol></div><div class="ab wide"><h4>E　ディクテーション（下線部が書き取り）</h4><ol class="al zh"><li>我从来<u>没自己包过饺子。</u></li><li>馅儿里<u>放猪肉和白菜。</u></li><li>把馅儿<u>放在皮的中间。</u></li><li>皮又薄又软，<u>馅儿又鲜又嫩。</u></li><li>北方人<u>过年一定吃饺子。</u></li></ol></div></div></section>
+<section class="page" id="a02">
+  <div class="folio"><span>解答</span><b>第2課　麻婆豆腐</b><span></span></div>
+  <div class="ans"><div class="ab wide"><h4>A-1　写真の書き入れ</h4><p>1. <b>麻婆豆腐</b> <span class="py">mápó dòufu</span> マーボー豆腐　2. <b>豆腐</b> <span class="py">dòufu</span> 豆腐　3. <b>葱</b> <span class="py">cōng</span> ネギ</p></div><div class="ab wide"><h4>A-2　ピンインから漢字</h4><p>1. <b>听说</b> <span class="py">tīngshuō</span>　2. <b>辣</b> <span class="py">là</span>　3. <b>甜</b> <span class="py">tián</span>　4. <b>够</b> <span class="py">gòu</span>　5. <b>点</b> <span class="py">diǎn</span>　6. <b>扫码</b> <span class="py">sǎomǎ</span></p></div><div class="ab wide"><h4>B　物語で穴埋め</h4><p>1. <b>食堂</b>　2. <b>经常</b>　3. <b>不过</b>　4. <b>听说</b>　5. <b>辣</b>　6. <b>甜</b>　7. <b>够</b>　8. <b>点</b>　9. <b>份</b>　10. <b>碗</b>　11. <b>米饭</b>　12. <b>扫码</b>　13. <b>嘴巴</b>　14. <b>麻</b>　15. <b>花椒</b>　16. <b>讲究</b>　17. <b>重要</b>　18. <b>得</b>　19. <b>已经</b>　20. <b>杯</b></p></div><div class="ab"><h4>C-1　並べ替え</h4><ol class="al zh"><li>中国的比日本的辣多了。</li><li>汉语越学越有意思。</li><li>这个汤有点儿咸。</li><li>这里可以刷卡吗？</li></ol></div><div class="ab"><h4>C-2　作文（解答例）</h4><ol class="al zh"><li>今天比昨天热一点儿。</li><li>天气越来越冷了。</li><li>这个菜有点儿油腻。</li><li>我不能喝酒。</li></ol></div><div class="ab"><h4>D　内容理解</h4><ol class="al"><li>×（经常吃）</li><li>×（微辣）</li><li>○</li><li>×（花椒）</li><li>○</li></ol></div><div class="ab wide"><h4>E　ディクテーション（下線部が書き取り）</h4><ol class="al zh"><li>我在日本<u>经常吃麻婆豆腐。</u></li><li>师傅，<u>来两份麻婆豆腐。</u></li><li>有点儿辣，<u>但是越吃越香。</u></li><li>四川菜<u>讲究"麻辣"。</u></li><li>你得<u>多喝点儿水。</u></li></ol></div></div>
+</section><section class="page" id="a03">
+  <div class="folio"><span>解答</span><b>第3課　北京烤鸭</b><span></span></div>
+  <div class="ans"><div class="ab wide"><h4>A-1　写真の書き入れ</h4><p>1. <b>北京烤鸭</b> <span class="py">Běijīng kǎoyā</span> 北京ダック　2. <b>葱</b> <span class="py">cōng</span> ネギ　3. <b>黄瓜</b> <span class="py">huángguā</span> キュウリ　4. <b>饼</b> <span class="py">bǐng</span> 薄い皮</p></div><div class="ab wide"><h4>A-2　ピンインから漢字</h4><p>1. <b>订</b> <span class="py">dìng</span>　2. <b>靠</b> <span class="py">kào</span>　3. <b>有名</b> <span class="py">yǒumíng</span>　4. <b>卷</b> <span class="py">juǎn</span>　5. <b>买单</b> <span class="py">mǎidān</span>　6. <b>请客</b> <span class="py">qǐngkè</span></p></div><div class="ab wide"><h4>B　物語で穴埋め</h4><p>1. <b>有名</b>　2. <b>订</b>　3. <b>位子</b>　4. <b>位</b>　5. <b>服务员</b>　6. <b>张</b>　7. <b>菜单</b>　8. <b>只</b>　9. <b>烤鸭</b>　10. <b>除了</b>　11. <b>凉菜</b>　12. <b>片</b>　13. <b>饼</b>　14. <b>肉</b>　15. <b>酱</b>　16. <b>葱</b>　17. <b>卷</b>　18. <b>一边</b>　19. <b>皮</b>　20. <b>请客</b></p></div><div class="ab"><h4>C-1　並べ替え</h4><ol class="al zh"><li>我是坐地铁来的。</li><li>除了北京以外，我还去过上海。</li><li>他一边吃饭一边看手机。</li><li>这位是我的老师。</li></ol></div><div class="ab"><h4>C-2　作文（解答例）</h4><ol class="al zh"><li>这家店是谁告诉你的？</li><li>除了烤鸭以外，还要一个汤吧。</li><li>我们一边吃一边聊吧。</li><li>你好，我想订位子，两位。</li></ol></div><div class="ab"><h4>D　内容理解</h4><ol class="al"><li>×（打电话订的）</li><li>○</li><li>×（一只）</li><li>○</li><li>×（AA了）</li></ol></div><div class="ab wide"><h4>E　ディクテーション（下線部が書き取り）</h4><ol class="al zh"><li>我想订<u>明天中午的位子，两位。</u></li><li>能给我们<u>靠窗的位子吗？</u></li><li>除了烤鸭以外，<u>再要一份凉菜就行了。</u></li><li>先拿一张饼，<u>放两片肉，蘸点儿甜面酱。</u></li><li>今天我请客吧，<u>上次是你请的。</u></li></ol></div></div>
+</section><section class="page" id="a04">
+  <div class="folio"><span>解答</span><b>第4課　小笼包</b><span></span></div>
+  <div class="ans"><div class="ab wide"><h4>A-1　写真の書き入れ</h4><p>1. <b>小笼包</b> <span class="py">xiǎolóngbāo</span> ショーロンポー　2. <b>蒸笼</b> <span class="py">zhēnglóng</span> せいろ　3. <b>醋</b> <span class="py">cù</span> 酢</p></div><div class="ab wide"><h4>A-2　ピンインから漢字</h4><p>1. <b>排队</b> <span class="py">páiduì</span>　2. <b>等</b> <span class="py">děng</span>　3. <b>看见</b> <span class="py">kànjiàn</span>　4. <b>夹</b> <span class="py">jiā</span>　5. <b>急</b> <span class="py">jí</span>　6. <b>烫</b> <span class="py">tàng</span></p></div><div class="ab wide"><h4>B　物語で穴埋め</h4><p>1. <b>排队</b>　2. <b>等</b>　3. <b>笼</b>　4. <b>烫</b>　5. <b>看见</b>　6. <b>里面</b>　7. <b>汤</b>　8. <b>夹</b>　9. <b>急</b>　10. <b>刚</b>　11. <b>咬</b>　12. <b>全</b>　13. <b>慢</b>　14. <b>完</b>　15. <b>试</b>　16. <b>第一次</b>　17. <b>半天</b>　18. <b>句</b>　19. <b>懂</b>　20. <b>打包</b></p></div><div class="ab"><h4>C-1　並べ替え</h4><ol class="al zh"><li>都能看见里面的汤。</li><li>两笼咱们吃得完吗？</li><li>别喝，太烫了。</li><li>一笼才六个。</li></ol></div><div class="ab"><h4>C-2　作文（解答例）</h4><ol class="al zh"><li>老师说的我都听懂了。</li><li>这么多菜，我吃不了。</li><li>不要放太多醋。</li><li>我等了一个小时才进去。</li></ol></div><div class="ab"><h4>D　内容理解</h4><ol class="al"><li>×（在上海）</li><li>×（二十分钟）</li><li>○</li><li>×（一句都听不懂）</li><li>○</li></ol></div><div class="ab wide"><h4>E　ディクテーション（下線部が書き取り）</h4><ol class="al zh"><li>咱们得<u>等多久啊？</u></li><li>哎，别急！<u>刚出锅的，烫得很。</u></li><li>先在皮上<u>咬一个小口，慢慢把汤喝了。</u></li><li>听不懂，<u>一句都听不懂。</u></li><li>一笼才六个。<u>真吃不了就打包呗。</u></li></ol></div></div>
+</section><section class="page" id="a05">
+  <div class="folio"><span>解答</span><b>第5課　火锅</b><span></span></div>
+  <div class="ans"><div class="ab wide"><h4>A-1　写真の書き入れ</h4><p>1. <b>火锅</b> <span class="py">huǒguō</span> 火鍋　2. <b>羊肉</b> <span class="py">yángròu</span> 羊肉　3. <b>青菜</b> <span class="py">qīngcài</span> 青菜　4. <b>蘸料</b> <span class="py">zhànliào</span> つけだれ</p></div><div class="ab wide"><h4>A-2　ピンインから漢字</h4><p>1. <b>降温</b> <span class="py">jiàngwēn</span>　2. <b>卖</b> <span class="py">mài</span>　3. <b>新鲜</b> <span class="py">xīnxiān</span>　4. <b>贵</b> <span class="py">guì</span>　5. <b>便宜</b> <span class="py">piányi</span>　6. <b>算</b> <span class="py">suàn</span></p></div><div class="ab wide"><h4>B　物語で穴埋め</h4><p>1. <b>降温</b>　2. <b>火锅</b>　3. <b>菜市场</b>　4. <b>老板</b>　5. <b>羊肉</b>　6. <b>卖</b>　7. <b>斤</b>　8. <b>新鲜</b>　9. <b>便宜</b>　10. <b>豆腐</b>　11. <b>青菜</b>　12. <b>记得</b>　13. <b>蘸料</b>　14. <b>拿</b>　15. <b>麻酱</b>　16. <b>开</b>　17. <b>熟</b>　18. <b>久</b>　19. <b>香菜</b>　20. <b>正好</b></p></div><div class="ab"><h4>C-1　並べ替え</h4><ol class="al zh"><li>请把羊肉拿出来。</li><li>桌上放着一块豆腐。</li><li>能便宜点儿吗？</li><li>我一吃辣就出汗。</li></ol></div><div class="ab"><h4>C-2　作文（解答例）</h4><ol class="al zh"><li>请把青菜放进去。</li><li>锅里煮着羊肉。</li><li>苹果怎么卖？能便宜点儿吗？</li><li>她一下课就去食堂。</li></ol></div><div class="ab"><h4>D　内容理解</h4><ol class="al"><li>×（只在店里吃过）</li><li>○</li><li>×（两斤）</li><li>○</li><li>×（忘了买香菜）</li></ol></div><div class="ab wide"><h4>E　ディクテーション（下線部が書き取り）</h4><ol class="al zh"><li>老板，<u>羊肉怎么卖？</u></li><li>来两斤，<u>能便宜点儿吗？</u></li><li>桌上<u>放着这么多菜！</u></li><li>羊肉一放进去<u>就熟，别煮太久。</u></li><li>你一说<u>我才想起来，忘了买香菜！</u></li></ol></div></div>
+</section><section class="page" id="a06">
+  <div class="folio"><span>解答</span><b>第6課　兰州拉面</b><span></span></div>
+  <div class="ans"><div class="ab wide"><h4>A-1　写真の書き入れ</h4><p>1. <b>兰州拉面</b> <span class="py">Lánzhōu lāmiàn</span> 蘭州ラーメン　2. <b>面</b> <span class="py">miàn</span> 麺　3. <b>牛肉</b> <span class="py">niúròu</span> 牛肉</p></div><div class="ab wide"><h4>A-2　ピンインから漢字</h4><p>1. <b>饿</b> <span class="py">è</span>　2. <b>挤</b> <span class="py">jǐ</span>　3. <b>站</b> <span class="py">zhàn</span>　4. <b>拉</b> <span class="py">lā</span>　5. <b>粗</b> <span class="py">cū</span>　6. <b>细</b> <span class="py">xì</span></p></div><div class="ab wide"><h4>B　物語で穴埋め</h4><p>1. <b>挤</b>　2. <b>满</b>　3. <b>票</b>　4. <b>站</b>　5. <b>细</b>　6. <b>种</b>　7. <b>宽</b>　8. <b>加</b>　9. <b>辣椒</b>　10. <b>马上</b>　11. <b>窗口</b>　12. <b>一直</b>　13. <b>拉</b>　14. <b>清</b>　15. <b>萝卜</b>　16. <b>端</b>　17. <b>筷子</b>　18. <b>筋道</b>　19. <b>滑</b>　20. <b>合适</b></p></div><div class="ab"><h4>C-1　並べ替え</h4><ol class="al zh"><li>你要细的还是宽的？</li><li>我什么都不敢吃。</li><li>面快好了。</li><li>他在门口站着等。</li></ol></div><div class="ab"><h4>C-2　作文（解答例）</h4><ol class="al zh"><li>堂食还是打包？</li><li>他什么面都吃。</li><li>店快关门了。</li><li>她端着碗站着吃。</li></ol></div><div class="ab"><h4>D　内容理解</h4><ol class="al"><li>×（早上人最多）</li><li>○</li><li>×（二细）</li><li>×（不要香菜，辣椒少放）</li><li>○</li></ol></div><div class="ab wide"><h4>E　ディクテーション（下線部が書き取り）</h4><ol class="al zh"><li>先排队交钱，<u>然后拿着票等面。</u></li><li>要粗的<u>还是细的？</u></li><li>我什么都<u>不懂，你帮我选吧。</u></li><li>好嘞，<u>马上就好！</u></li><li>面又筋道又滑，<u>汤真鲜。</u></li></ol></div></div>
+</section><section class="page" id="a07">
+  <div class="folio"><span>解答</span><b>第7課　宫保鸡丁</b><span></span></div>
+  <div class="ans"><div class="ab wide"><h4>A-1　写真の書き入れ</h4><p>1. <b>宫保鸡丁</b> <span class="py">gōngbǎo jīdīng</span> 宮保鶏丁　2. <b>四川省</b> <span class="py">Sìchuān shěng</span> 四川省　3. <b>鸡肉</b> <span class="py">jīròu</span> 鶏肉　4. <b>花生</b> <span class="py">huāshēng</span> ピーナッツ　5. <b>辣椒</b> <span class="py">làjiāo</span> 唐辛子　6. <b>花椒</b> <span class="py">huājiāo</span> 花椒</p></div><div class="ab wide"><h4>A-2　ピンインから漢字</h4><p>1. <b>记</b> <span class="py">jì</span>　2. <b>切</b> <span class="py">qiē</span>　3. <b>腌</b> <span class="py">yān</span>　4. <b>小心</b> <span class="py">xiǎoxīn</span>　5. <b>调</b> <span class="py">tiáo</span>　6. <b>搅拌</b> <span class="py">jiǎobàn</span></p></div><div class="ab wide"><h4>B　物語で穴埋め</h4><p>1. <b>道</b>　2. <b>材料</b>　3. <b>花生</b>　4. <b>蒜</b>　5. <b>调料</b>　6. <b>糖</b>　7. <b>记</b>　8. <b>切</b>　9. <b>腌</b>　10. <b>差不多</b>　11. <b>小心</b>　12. <b>调</b>　13. <b>勺</b>　14. <b>搅拌</b>　15. <b>倒</b>　16. <b>脆</b>　17. <b>成功</b>　18. <b>厉害</b>　19. <b>遍</b></p></div><div class="ab"><h4>C-1　並べ替え</h4><ol class="al zh"><li>请把肉切成片。</li><li>先洗菜，再切菜，最后炒菜。</li><li>他做菜做得很好吃。</li><li>把鸡肉炒到变色。</li></ol></div><div class="ab"><h4>C-2　作文（解答例）</h4><ol class="al zh"><li>请把土豆切成丝。</li><li>先把油烧热，再放蒜，最后放青菜。</li><li>她汉语说得很好。／她说汉语说得很好。</li><li>请把肉煮到变软。</li></ol></div><div class="ab wide"><h4>C-3　作文（解答例）</h4><p class="zh">先和面、擀皮，再把馅儿放在皮的中间，最后把皮对折，捏紧。</p></div><div class="ab"><h4>D　内容理解</h4><ol class="al"><li>×（鸡胸肉）</li><li>○</li><li>×（两勺酱油、一勺醋）</li><li>×（先放干辣椒和花椒）</li><li>○</li></ol></div><div class="ab wide"><h4>E　ディクテーション（下線部が書き取り）</h4><ol class="al zh"><li>先把<u>鸡肉切成丁。</u></li><li>切的时候<u>小心手。</u></li><li>两勺酱油、<u>一勺醋、一勺糖。</u></li><li>炒到变色，<u>再放葱姜蒜。</u></li><li>第一次<u>就这么成功，你太厉害了。</u></li></ol></div></div>
+</section><section class="page" id="a08">
+  <div class="folio"><span>解答</span><b>第8課　糖醋排骨</b><span></span></div>
+  <div class="ans"><div class="ab wide"><h4>A-1　写真の書き入れ</h4><p>1. <b>糖醋排骨</b> <span class="py">tángcù páigǔ</span> 酢豚風スペアリブ　2. <b>华东地区</b> <span class="py">Huádōng dìqū</span> 華東地域　3. <b>排骨</b> <span class="py">páigǔ</span> スペアリブ　4. <b>糖</b> <span class="py">táng</span> 砂糖　5. <b>醋</b> <span class="py">cù</span> 酢　6. <b>酱油</b> <span class="py">jiàngyóu</span> 醤油</p></div><div class="ab wide"><h4>A-2　ピンインから漢字</h4><p>1. <b>炒</b> <span class="py">chǎo</span>　2. <b>烧</b> <span class="py">shāo</span>　3. <b>糊</b> <span class="py">hú</span>　4. <b>慌</b> <span class="py">huāng</span>　5. <b>关</b> <span class="py">guān</span>　6. <b>可惜</b> <span class="py">kěxī</span></p></div><div class="ab wide"><h4>B　物語で穴埋め</h4><p>1. <b>排骨</b>　2. <b>视频</b>　3. <b>炒</b>　4. <b>火</b>　5. <b>烧</b>　6. <b>锅</b>　7. <b>慌</b>　8. <b>关</b>　9. <b>重新</b>　10. <b>化</b>　11. <b>翻</b>　12. <b>裹</b>　13. <b>糖色</b>　14. <b>盖</b>　15. <b>酸</b>　16. <b>上次</b>　17. <b>收汁</b>　18. <b>失败</b>　19. <b>结果</b>　20. <b>一半</b></p></div><div class="ab"><h4>C-1　並べ替え</h4><ol class="al zh"><li>糖被烧糊了。</li><li>我做的没有你做的那么好吃。</li><li>这个菜虽然有点儿酸，但是很好吃。</li><li>只要火小一点儿，糖就不会糊。</li></ol></div><div class="ab"><h4>C-2　作文（解答例）</h4><ol class="al zh"><li>排骨被弟弟吃完了。</li><li>今天没有昨天那么冷。</li><li>虽然中间失败了一次，但是结果很好。</li><li>只要醋少放一点儿，就不会太酸。</li></ol></div><div class="ab wide"><h4>C-3　作文（解答例）</h4><p class="zh">先把排骨煮一下，再用小火炒糖，糖变成红棕色就把排骨倒进去。然后放酱油、醋和热水，盖上盖子焖十五分钟，最后开大火收汁。只要糖色炒好，就成功了一半。</p></div><div class="ab"><h4>D　内容理解</h4><ol class="al"><li>×（由美一个人在家做，开视频请王芳看）</li><li>○</li><li>○</li><li>×（没有王芳做的那么甜，太酸了）</li><li>×（只要糖色炒好）</li></ol></div><div class="ab wide"><h4>E　ディクテーション（下線部が書き取り）</h4><ol class="al zh"><li>糖被烧糊了，<u>锅里全是黑的。</u></li><li>先把火关小，<u>糊的倒掉，重新来。</u></li><li>没有你上次<u>做的那么甜。</u></li><li>虽然中间失败了一次，<u>但是结果不错。</u></li><li>只要糖色炒好，<u>糖醋排骨就成功了一半。</u></li></ol></div></div>
+</section><section class="page" id="a09">
+  <div class="folio"><span>解答</span><b>第9課　西红柿炒鸡蛋</b><span></span></div>
+  <div class="ans"><div class="ab wide"><h4>A-1　写真の書き入れ</h4><p>1. <b>西红柿炒鸡蛋</b> <span class="py">xīhóngshì chǎo jīdàn</span> トマトと卵の炒め　2. <b>中国各地</b> <span class="py">Zhōngguó gèdì</span> 中国各地　3. <b>鸡蛋</b> <span class="py">jīdàn</span> 卵　4. <b>西红柿</b> <span class="py">xīhóngshì</span> トマト　5. <b>葱</b> <span class="py">cōng</span> ネギ　6. <b>油</b> <span class="py">yóu</span> 油</p></div><div class="ab wide"><h4>A-2　ピンインから漢字</h4><p>1. <b>腻</b> <span class="py">nì</span>　2. <b>简单</b> <span class="py">jiǎndān</span>　3. <b>洗</b> <span class="py">xǐ</span>　4. <b>打</b> <span class="py">dǎ</span>　5. <b>搅</b> <span class="py">jiǎo</span>　6. <b>盛</b> <span class="py">chéng</span></p></div><div class="ab wide"><h4>B　物語で穴埋め</h4><p>1. <b>宿舍</b>　2. <b>厨房</b>　3. <b>腻</b>　4. <b>面条</b>　5. <b>家常菜</b>　6. <b>西红柿</b>　7. <b>洗</b>　8. <b>打</b>　9. <b>鸡蛋</b>　10. <b>搅</b>　11. <b>油</b>　12. <b>铲子</b>　13. <b>盛</b>　14. <b>老</b>　15. <b>一般</b>　16. <b>南方</b>　17. <b>习惯</b>　18. <b>热</b>　19. <b>拌</b>　20. <b>省</b></p></div><div class="ab"><h4>C-1　並べ替え</h4><ol class="al zh"><li>你尝尝这个汤。</li><li>油热了再倒鸡蛋。</li><li>因为宿舍没有厨房，所以我常去食堂。</li><li>这道菜不但便宜，而且很好做。</li></ol></div><div class="ab"><h4>C-2　作文（解答例）</h4><ol class="al zh"><li>我看一看菜单。</li><li>饭好了，快来吃吧。</li><li>因为西红柿还没熟，所以有点儿酸。</li><li>这道菜不但简单，而且很好吃。</li></ol></div><div class="ab wide"><h4>C-3　作文（解答例）</h4><p class="zh">先把西红柿切成块，把鸡蛋打到碗里，放点儿盐，用筷子搅一搅。锅热了倒油，先炒鸡蛋，有点儿熟了就盛出来。因为鸡蛋炒老了不好吃，所以要先盛出来。再炒西红柿，出汤了放一点儿糖。最后把鸡蛋倒回去，用铲子翻几下，关火。</p></div><div class="ab"><h4>D　内容理解</h4><ol class="al"><li>○</li><li>×（只会煮面条）</li><li>×（先炒鸡蛋）</li><li>○</li><li>×（爱放一点儿）</li></ol></div><div class="ab wide"><h4>E　ディクテーション（下線部が書き取り）</h4><ol class="al zh"><li>中国人学做饭，<u>第一道都是它。</u></li><li>用筷子<u>搅一搅。</u></li><li>锅热了<u>倒油。</u></li><li>因为鸡蛋炒老了就不好吃了，<u>所以先炒鸡蛋。</u></li><li>不但简单，<u>而且比食堂的好吃多了。</u></li></ol></div></div>
+</section><section class="page" id="a10">
+  <div class="folio"><span>解答</span><b>第10課　麻辣烫</b><span></span></div>
+  <div class="ans"><div class="ab wide"><h4>A-1　写真の書き入れ</h4><p>1. <b>麻辣烫</b> <span class="py">málàtàng</span> マーラータン　2. <b>四川省</b> <span class="py">Sìchuān shěng</span> 四川省　3. <b>牛肉</b> <span class="py">niúròu</span> 牛肉　4. <b>豆腐</b> <span class="py">dòufu</span> 豆腐　5. <b>青菜</b> <span class="py">qīngcài</span> 青菜　6. <b>金针菇</b> <span class="py">jīnzhēngū</span> えのき　7. <b>木耳</b> <span class="py">mù'ěr</span> きくらげ　8. <b>莲藕</b> <span class="py">lián'ǒu</span> レンコン　9. <b>鱼丸</b> <span class="py">yúwán</span> つみれ　10. <b>粉丝</b> <span class="py">fěnsī</span> 春雨</p></div><div class="ab wide"><h4>A-2　ピンインから漢字</h4><p>1. <b>复习</b> <span class="py">fùxí</span>　2. <b>忘</b> <span class="py">wàng</span>　3. <b>关门</b> <span class="py">guānmén</span>　4. <b>搜</b> <span class="py">sōu</span>　5. <b>选</b> <span class="py">xuǎn</span>　6. <b>超时</b> <span class="py">chāoshí</span></p></div><div class="ab wide"><h4>B　物語で穴埋め</h4><p>1. <b>复习</b>　2. <b>关门</b>　3. <b>外卖</b>　4. <b>软件</b>　5. <b>搜</b>　6. <b>评分</b>　7. <b>满减</b>　8. <b>按</b>　9. <b>购物车</b>　10. <b>汤底</b>　11. <b>番茄</b>　12. <b>辣度</b>　13. <b>备注</b>　14. <b>配送费</b>　15. <b>超时</b>　16. <b>平台</b>　17. <b>放心</b>　18. <b>下单</b>　19. <b>骑手</b>　20. <b>好评</b></p></div><div class="ab"><h4>C-1　並べ替え</h4><ol class="al zh"><li>我只吃过一次麻辣烫。</li><li>我们在楼下等了骑手二十分钟。</li><li>你要骨汤还是番茄的？</li><li>要是超时，平台就退钱。</li></ol></div><div class="ab"><h4>C-2　作文（解答例）</h4><ol class="al zh"><li>请再读一遍。</li><li>他学了三年汉语。</li><li>点外卖或者自己做都行。</li><li>要是太辣了，就多喝点儿水。</li></ol></div><div class="ab wide"><h4>C-3　作文（解答例）</h4><p class="zh">先打开外卖软件，搜"麻辣烫"。然后选一家评分高的店，把想吃的菜加进购物车。再选汤底和辣度，要是有要求，就写在备注里。最后看一下配送费，下单付钱。等骑手送到，下楼取餐就行了。</p></div><div class="ab"><h4>D　内容理解</h4><ol class="al"><li>○</li><li>×（从来没用过）</li><li>×（番茄的）</li><li>○</li><li>×（没有超时，二十分钟就到了）</li></ol></div><div class="ab wide"><h4>E　ディクテーション（下線部が書き取り）</h4><ol class="al zh"><li>点外卖呗！<u>你手机上有外卖软件吗？</u></li><li>想吃什么<u>就选什么，按份算钱。</u></li><li>汤底要<u>骨汤还是番茄的？</u></li><li>要是超时，<u>平台就会退你钱。</u></li><li>都等了<u>二十分钟了，怎么还没到啊？</u></li></ol></div></div>
+</section><section class="page" id="a11">
+  <div class="folio"><span>解答</span><b>第11課　粽子・月饼</b><span></span></div>
+  <div class="ans"><div class="ab wide"><h4>A-1　写真の書き入れ</h4><p>1. <b>粽子</b> <span class="py">zòngzi</span> ちまき　2. <b>糯米</b> <span class="py">nuòmǐ</span> もち米　3. <b>粽叶</b> <span class="py">zòngyè</span> ちまきの葉　4. <b>五花肉</b> <span class="py">wǔhuāròu</span> 豚バラ肉　5. <b>月饼</b> <span class="py">yuèbǐng</span> 月餅　6. <b>豆沙</b> <span class="py">dòushā</span> あんこ　7. <b>蛋黄</b> <span class="py">dànhuáng</span> 卵の黄身</p></div><div class="ab wide"><h4>A-2　ピンインから漢字</h4><p>1. <b>寄</b> <span class="py">jì</span>　2. <b>拆</b> <span class="py">chāi</span>　3. <b>送</b> <span class="py">sòng</span>　4. <b>收</b> <span class="py">shōu</span>　5. <b>客气</b> <span class="py">kèqi</span>　6. <b>团圆</b> <span class="py">tuányuán</span></p></div><div class="ab wide"><h4>B　物語で穴埋め</h4><p>1. <b>中秋节</b>　2. <b>老家</b>　3. <b>月饼</b>　4. <b>寄</b>　5. <b>快递</b>　6. <b>分</b>　7. <b>客气</b>　8. <b>心意</b>　9. <b>收</b>　10. <b>豆沙</b>　11. <b>蛋黄</b>　12. <b>特意</b>　13. <b>咸</b>　14. <b>端午节</b>　15. <b>粽子</b>　16. <b>北方</b>　17. <b>吵</b>　18. <b>月亮</b>　19. <b>团圆</b>　20. <b>回礼</b></p></div><div class="ab"><h4>C-1　並べ替え</h4><ol class="al zh"><li>我妈让我带月饼给你。</li><li>他连饺子都不会包。</li><li>我每天给妈妈打电话。</li><li>过年的时候大家都吃饺子。</li></ol></div><div class="ab"><h4>C-2　作文（解答例）</h4><ol class="al zh"><li>老师让我们每天说汉语。</li><li>他连月饼都没吃过。</li><li>我给朋友买了一个礼物。</li><li>回国以后，我给你寄照片。</li></ol></div><div class="ab wide"><h4>C-3　作文（解答例）</h4><p class="zh">在日本，过年的时候我们吃"御节料理"。这是一种传统的节日菜，里边有很多种菜，每一种都有好的意思。以前我小的时候，奶奶自己做，现在很多人都在店里买。妈妈每年都让我帮她准备。过年的时候，我也会给朋友送一点儿。</p></div><div class="ab"><h4>D　内容理解</h4><ol class="al"><li>×（老家寄来的）</li><li>○</li><li>×（甜的）</li><li>○</li><li>×（不用回礼）</li></ol></div><div class="ab wide"><h4>E　ディクテーション（下線部が書き取り）</h4><ol class="al zh"><li>我妈让我<u>分给你。</u></li><li>客气什么呀，<u>一点儿心意。</u></li><li>连粽子<u>都要吵。</u></li><li>中秋节的时候<u>你们都做什么？</u></li><li>以前奶奶<u>还自己做月饼呢。</u></li></ol></div></div>
+</section><section class="page" id="a12">
+  <div class="folio"><span>解答</span><b>第12課　广式早茶</b><span></span></div>
+  <div class="ans"><div class="ab wide"><h4>A-1　写真の書き入れ</h4><p>1. <b>广式早茶</b> <span class="py">guǎngshì zǎochá</span> 広東式飲茶　2. <b>广东省</b> <span class="py">Guǎngdōng shěng</span> 広東省　3. <b>虾饺</b> <span class="py">xiājiǎo</span> エビ蒸し餃子　4. <b>烧卖</b> <span class="py">shāomài</span> シュウマイ　5. <b>叉烧包</b> <span class="py">chāshāobāo</span> チャーシューまん　6. <b>肠粉</b> <span class="py">chángfěn</span> 腸粉　7. <b>凤爪</b> <span class="py">fèngzhuǎ</span> 鶏の足　8. <b>蛋挞</b> <span class="py">dàntà</span> エッグタルト　9. <b>茶</b> <span class="py">chá</span> お茶</p></div><div class="ab wide"><h4>A-2　ピンインから漢字</h4><p>1. <b>回国</b> <span class="py">huíguó</span>　2. <b>勾</b> <span class="py">gōu</span>　3. <b>一样</b> <span class="py">yíyàng</span>　4. <b>敲</b> <span class="py">qiāo</span>　5. <b>凉</b> <span class="py">liáng</span>　6. <b>着急</b> <span class="py">zháojí</span></p></div><div class="ab wide"><h4>B　物語で穴埋め</h4><p>1. <b>回国</b>　2. <b>飞机</b>　3. <b>早茶</b>　4. <b>点心</b>　5. <b>茶楼</b>　6. <b>单子</b>　7. <b>勾</b>　8. <b>一样</b>　9. <b>应该</b>　10. <b>手指</b>　11. <b>敲</b>　12. <b>规矩</b>　13. <b>意思</b>　14. <b>趁</b>　15. <b>凉</b>　16. <b>着急</b>　17. <b>照顾</b>　18. <b>客人</b>　19. <b>争</b>　20. <b>联系</b></p></div><div class="ab"><h4>C-1　並べ替え</h4><ol class="al zh"><li>你不是不吃辣吗？</li><li>这个菜看起来很辣。</li><li>这顿我请，下次你请。</li><li>你想吃什么就点什么。</li></ol></div><div class="ab"><h4>C-2　作文（解答例）</h4><ol class="al zh"><li>你不是下星期回国吗？</li><li>他好像还没喝过早茶。</li><li>今天我请客，别AA了。</li><li>你想吃什么就点什么。</li></ol></div><div class="ab wide"><h4>C-3　作文（解答例）</h4><p class="zh">我最喜欢的是第一课的饺子。那是我第一次在王芳家自己包饺子。饺子皮又薄又软，馅儿又鲜又嫩，蘸醋吃比在日本吃的好吃多了。我最喜欢饺子，因为不光好吃，还能和朋友一起包，一边包一边聊天。你不是也喜欢饺子吗？要是有机会，一定要试试自己包！</p></div><div class="ab"><h4>D　内容理解</h4><ol class="al"><li>○</li><li>×（一直想去，还没喝过）</li><li>×（用手指敲桌子）</li><li>×（要趁热吃）</li><li>○</li></ol></div><div class="ab wide"><h4>E　ディクテーション（下線部が書き取り）</h4><ol class="al zh"><li>你不是<u>下星期就回国了吗？</u></li><li>要什么<u>就在单子上勾什么。</u></li><li>用手指<u>敲两下桌子就行。</u></li><li>虾饺皮<u>看起来好薄。</u></li><li>那怎么行？<u>你是客人，我请。</u></li></ol></div></div>
+</section><section class="page" id="at1">
+  <div class="folio"><span>解答</span><b>確認テスト1</b><span>第1〜3課</span></div>
+  <div class="ans"><div class="ab wide"><h4>A　ピンインを漢字に</h4><p>1. <b>馅儿</b>　2. <b>捏</b>　3. <b>蘸</b>　4. <b>原来</b>　5. <b>劲儿</b>　6. <b>讲究</b>　7. <b>扫码</b>　8. <b>位子</b>　9. <b>凉菜</b>　10. <b>请客</b></p></div><div class="ab wide"><h4>B　日本語を中国語に</h4><p>1. <b>薄</b>　2. <b>闻</b>　3. <b>点</b>　4. <b>够</b>　5. <b>除了</b></p></div><div class="ab wide"><h4>C　物語で穴埋め</h4><p>1. <b>教</b>　2. <b>盐</b>　3. <b>煮</b>　4. <b>尝</b>　5. <b>花椒</b>　6. <b>麻</b>　7. <b>从来</b>　8. <b>听说</b>　9. <b>有名</b>　10. <b>订</b></p></div><div class="ab"><h4>D　並べ替え</h4><ol class="al zh"><li>我从来没一个人包过饺子。</li><li>他把菜单放在桌子上。</li><li>中国的麻婆豆腐比日本的辣多了。</li><li>这个菜越吃越香。</li><li>我们一边吃烤鸭一边聊天。</li></ol></div></div>
+<div class="ans"><div class="ab wide"><h4>A　ピンインを漢字に</h4><p>1. <b>半天</b>　2. <b>打包</b>　3. <b>正好</b>　4. <b>新鲜</b>　5. <b>辣椒</b>　6. <b>合适</b>　7. <b>酱油</b>　8. <b>味道</b>　9. <b>食堂</b>　10. <b>服务员</b></p></div><div class="ab wide"><h4>B　日本語を中国語に</h4><p>1. <b>烫</b>　2. <b>贵</b>　3. <b>宽</b>　4. <b>薄</b>　5. <b>点</b></p></div><div class="ab wide"><h4>C　物語で穴埋め</h4><p>1. <b>菜市场</b>　2. <b>斤</b>　3. <b>有名</b>　4. <b>排队</b>　5. <b>站</b>　6. <b>懂</b>　7. <b>端</b>　8. <b>香</b>　9. <b>经常</b>　10. <b>请客</b></p></div><div class="ab"><h4>D　並べ替え</h4><ol class="al zh"><li>两笼咱们吃得完吗？</li><li>别放太多醋。</li><li>你把青菜放进去吧。</li><li>羊肉一放进去就熟。</li><li>我什么面都吃。</li></ol></div></div></section><section class="page" id="at3">
+  <div class="folio"><span>解答</span><b>確認テスト3</b><span>第7〜9課（第1〜6課も含む）</span></div>
+  <div class="ans"><div class="ab wide"><h4>A　ピンインを漢字に</h4><p>1. <b>材料</b>　2. <b>搅拌</b>　3. <b>重新</b>　4. <b>可惜</b>　5. <b>厨房</b>　6. <b>习惯</b>　7. <b>酱油</b>　8. <b>经常</b>　9. <b>新鲜</b>　10. <b>合适</b></p></div><div class="ab wide"><h4>B　日本語を中国語に</h4><p>1. <b>脆</b>　2. <b>翻</b>　3. <b>老</b>　4. <b>除了</b>　5. <b>夹</b></p></div><div class="ab wide"><h4>C　物語で穴埋め</h4><p>1. <b>教</b>　2. <b>请客</b>　3. <b>蒜</b>　4. <b>简单</b>　5. <b>道</b>　6. <b>糊</b>　7. <b>慌</b>　8. <b>颜色</b>　9. <b>马上</b>　10. <b>食堂</b></p></div><div class="ab"><h4>D　並べ替え</h4><ol class="al zh"><li>我把黄瓜切成块。</li><li>我切菜切得很慢。</li><li>锅被烧黑了。</li><li>只要多练习，就能做好。</li><li>这道菜不但简单，而且很好吃。</li></ol></div></div>
+<div class="ans"><div class="ab wide"><h4>A　ピンインを漢字に</h4><p>1. <b>骑手</b>　2. <b>放心</b>　3. <b>快递</b>　4. <b>传统</b>　5. <b>照顾</b>　6. <b>规矩</b>　7. <b>酱油</b>　8. <b>新鲜</b>　9. <b>材料</b>　10. <b>厨房</b></p></div><div class="ab wide"><h4>B　日本語を中国語に</h4><p>1. <b>下单</b>　2. <b>收</b>　3. <b>趁</b>　4. <b>薄</b>　5. <b>熟</b></p></div><div class="ab wide"><h4>C　物語で穴埋め</h4><p>1. <b>回国</b>　2. <b>鸡蛋</b>　3. <b>香</b>　4. <b>厉害</b>　5. <b>视频</b>　6. <b>月饼</b>　7. <b>团圆</b>　8. <b>忘</b>　9. <b>外卖</b>　10. <b>茶楼</b></p></div><div class="ab"><h4>D　並べ替え</h4><ol class="al zh"><li>我想再点一次麻辣烫。</li><li>要是明天下雨，我们就不去了。</li><li>我妈让我分给你几个粽子。</li><li>这个菜连孩子都爱吃。</li><li>你不是下星期就回国了吗？</li></ol></div></div></section><section class="page">
+  <div class="folio"><span>解答</span><b>総合模擬テスト</b><span>50問</span></div>
+  <div class="ans"><div class="ab wide"><h4>一　听力　1〜15</h4><p>1. <b>A</b>　2. <b>C</b>　3. <b>C</b>　4. <b>A</b>　5. <b>B</b>　6. <b>C</b>　7. <b>A</b>　8. <b>B</b>　9. <b>A</b>　10. <b>B</b>　11. <b>C</b>　12. <b>A</b>　13. <b>B</b>　14. <b>C</b>　15. <b>A</b></p></div><div class="ab wide"><h4>二　阅读　空欄補充 16〜25</h4><p>16. <b>只</b>　17. <b>蘸</b>　18. <b>扫码</b>　19. <b>成功</b>　20. <b>焖</b>　21. <b>排队</b>　22. <b>腻</b>　23. <b>外卖</b>　24. <b>寄</b>　25. <b>敲</b></p></div><div class="ab wide"><h4>二　阅读　並べ替え 26〜30</h4><p>26. <b>BAC</b>　27. <b>CBA</b>　28. <b>ACB</b>　29. <b>BCA</b>　30. <b>CAB</b></p></div><div class="ab wide"><h4>二　阅读　読解 31〜40</h4><p>31. <b>B</b>　32. <b>A</b>　33. <b>C</b>　34. <b>A</b>　35. <b>B</b>　36. <b>A</b>　37. <b>C</b>　38. <b>B</b>　39. <b>C</b>　40. <b>B</b></p></div><div class="ab"><h4>三　书写　並べ替え 41〜45</h4><ol class="al zh"><li>我从来没自己包过饺子。</li><li>他们一边包饺子一边聊天。</li><li>请把鸡肉切成块。</li><li>只要火小一点儿，糖就不会糊。</li><li>你想吃什么就点什么。</li></ol></div><div class="ab"><h4>三　书写　作文 46〜50（解答例）</h4><ol class="al zh"><li>我想订一个靠窗的位子，两位。</li><li>我不太能吃辣，请少放一点儿辣椒。</li><li>我们先把馅儿包进皮儿里，然后放在锅里煮十分钟。</li><li>因为火太大了，所以糖被我烧糊了。</li><li>今天谢谢你请客，下次一定我请。</li></ol></div></div>
+</section><section class="page">
+  <div class="folio"><span>解答</span><b>総合模擬テスト　听力 音声台本</b><span>Track TF-01</span></div>
+  <ol class="al zh" style="font-size:13px"><li>我从来没自己包过饺子，今天是第一次。我包的皮儿有点儿薄，样子也不太好看，不过味道很鲜。</li><li>男：今天的麻婆豆腐比昨天的还辣。
+女：我觉得正好，越辣越好吃，够劲儿！</li><li>我昨天打电话订了一个靠窗的位子，两位。除了烤鸭以外，我们还点了一个凉菜。</li><li>女：小心点儿，小笼包里面的汤很烫，别急着咬。
+男：知道了，我先咬一个小口，慢慢喝。</li><li>男：羊肉三十五块一斤，今天早上刚到的，很新鲜。
+女：太贵了，便宜点儿吧，我要两斤。</li><li>老板：您要细的还是宽的？
+由美：我要细的，多放点儿香菜，辣椒别放太多。</li><li>做宫保鸡丁，先把鸡肉切成块，用淀粉腌一下，然后再下锅炒。这样炒出来的鸡肉又嫩又香。</li><li>上次我做糖醋排骨的时候，糖被我烧糊了，锅也黑了，只好重新做。这次我把火关小了一点儿。</li><li>女：这个西红柿炒鸡蛋怎么这么好吃？你放糖了吗？
+男：放了一点儿。南方人一般放糖，北方人喜欢放盐。</li><li>我用软件点了一份麻辣烫，汤底选的是番茄的，辣度是微辣，备注写了“不要香菜”。骑手说二十分钟就送到。</li><li>女：这盒月饼是我妈妈让我给你的，老家特意寄来的。
+男：太客气了，中秋节还没到呢，谢谢阿姨。</li><li>小李：今天我请客，你们想吃什么就点什么，别客气。
+由美：那怎么行？你上次已经请过了，这次让我来。</li><li>我们排队等了半天才进去，一坐下服务员就给我们倒了普洱茶。这里的虾饺和肠粉特别好吃。</li><li>天气一降温，我就想吃火锅。锅里煮着羊肉和青菜，蘸料是麻酱的，一边吃一边聊天，暖和极了。</li><li>女：我复习到十点，都忘了吃饭，食堂已经关门了。
+男：那点个外卖吧，楼下那家麻辣烫评分很高，还有满减。</li></ol>
+</section>
+</div>
